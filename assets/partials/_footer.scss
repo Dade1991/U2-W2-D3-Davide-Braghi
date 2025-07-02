@@ -1,0 +1,10 @@
+footer {
+  padding: $biggest-spacing;
+  background-color: $dark;
+  @include flex-column;
+  @include centered;
+  p {
+    padding: $space-little;
+    color: $tertiary;
+  }
+}

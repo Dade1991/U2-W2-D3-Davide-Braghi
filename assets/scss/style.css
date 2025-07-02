@@ -256,6 +256,26 @@ main div.agency-presentation div.agency-buttons ul {
   align-items: center;
   justify-content: space-around;
 }
+main div.agency-presentation div.agency-buttons ul .special-button {
+  font-family: "SUSE", sans-serif, sans-serif;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(206, 206, 206);
+  color: rgb(228, 5, 5);
+  font-size: 0.7em;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgb(228, 5, 5);
+}
+main div.agency-presentation div.agency-buttons ul .special-button:hover {
+  transform: scale(1.1);
+}
 main div.agency-presentation div.agency-buttons ul button {
   font-family: "SUSE", sans-serif, sans-serif;
   border: 2px solid black;
@@ -313,4 +333,8 @@ footer {
 footer p {
   padding: 10px;
   color: rgb(206, 206, 206);
+}
+
+main.animation-welcome {
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
