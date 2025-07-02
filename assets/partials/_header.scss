@@ -98,6 +98,10 @@ main {
     div.agency-description {
       flex-grow: 1;
 
+      p {
+        color: $tertiary;
+      }
+
       h2 {
         margin-bottom: $space-big;
         font-size: $big-font-size;
@@ -161,5 +165,16 @@ main {
         width: 100%;
       }
     }
+  }
+}
+
+footer {
+  padding: $biggest-spacing;
+  background-color: $dark;
+  @include flex-column;
+  @include centered;
+  p {
+    padding: $space-little;
+    color: $tertiary;
   }
 }

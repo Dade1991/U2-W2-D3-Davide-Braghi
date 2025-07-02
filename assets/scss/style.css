@@ -238,6 +238,9 @@ main div.agency-presentation {
 main div.agency-presentation div.agency-description {
   flex-grow: 1;
 }
+main div.agency-presentation div.agency-description p {
+  color: rgb(206, 206, 206);
+}
 main div.agency-presentation div.agency-description h2 {
   margin-bottom: 20px;
   font-size: 1.3em;
@@ -296,4 +299,18 @@ main section.section-gallery div.gallery-container img {
   display: block;
   margin: auto;
   width: 100%;
+}
+
+footer {
+  padding: 50px;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  padding: 10px;
+  color: rgb(206, 206, 206);
 }/*# sourceMappingURL=style.css.map */
