@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "SUSE", sans-serif, sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  background-image: linear-gradient(rgb(206, 206, 206), #fffa75);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+header {
+  background-color: rgb(133, 51, 153);
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+header img {
+  width: 200px;
+  height: auto;
+  padding-right: 50px;
+}
+header .header-banner {
+  display: flex;
+  flex-direction: column;
+}
+header .header-banner div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header .header-banner img {
+  width: 300px;
+  padding: 0;
+  position: relative;
+  top: 20px;
+  right: 180px;
+}
+header .header-banner h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(206, 206, 206);
+  margin-bottom: 25px;
+  font-family: "Honk", system-ui;
+  font-size: 4em;
+}
+header .header-banner h1 span {
+  font-size: 1.3em;
+}
+header ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  color: rgb(206, 206, 206);
+}
+header ul li {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+header ul li button {
+  font-family: "SUSE", sans-serif, sans-serif;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(206, 206, 206);
+  color: rgb(228, 5, 5);
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+header ul li button:hover {
+  transform: scale(1.2);
+}
+
+main {
+  padding: 25px;
+}
+main section.quick-info {
+  padding: 25px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(133, 51, 153);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+main div.agency-presentation {
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+main div.agency-presentation div.agency-description {
+  flex-grow: 1;
+}
+main div.agency-presentation div.agency-description h2 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-style: italic;
+  color: rgb(206, 206, 206);
+  text-shadow: 1px 1px 5px rgb(228, 5, 5);
+}
+main div.agency-presentation div.agency-buttons ul {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+main div.agency-presentation div.agency-buttons ul button {
+  font-family: "SUSE", sans-serif, sans-serif;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(206, 206, 206);
+  color: rgb(228, 5, 5);
+  font-size: 0.7em;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+main div.agency-presentation div.agency-buttons ul button:hover {
+  transform: scale(1.1);
+}
+main img {
+  box-shadow: 0 0 10px rgb(228, 5, 5);
+}
+main section.section-gallery {
+  margin: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: rgb(133, 51, 153);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.section-gallery div.gallery-container {
+  width: 40%;
+  padding: 25px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+main section.section-gallery div.gallery-container img {
+  height: 100%;
+  display: block;
+  margin: auto;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

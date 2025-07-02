@@ -1,0 +1,165 @@
+body {
+  font-family: $standard-font;
+  font-size: $default-font-size;
+  font-weight: $default-weight;
+  background-image: $backfround-special;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+header {
+  background-color: $primary;
+  @include flex-row;
+  padding: $padding-main;
+  justify-content: space-between;
+  box-shadow: $strong-shadow;
+
+  img {
+    width: 200px;
+    height: auto;
+    padding-right: $biggest-spacing;
+  }
+
+  .header-banner {
+    @include flex-column;
+
+    div {
+      @include end-middle;
+    }
+
+    img {
+      width: 300px;
+      padding: 0;
+      position: relative;
+      top: 20px;
+      right: 180px;
+    }
+
+    h1 {
+      @include centered;
+      color: $tertiary;
+      margin-bottom: $smallest-spacing;
+      font-family: $tamarro-font;
+      font-size: $title-font-size;
+      span {
+        font-size: $big-font-size;
+      }
+    }
+  }
+
+  ul {
+    @include end-middle;
+    @include flex-row;
+    color: $tertiary;
+
+    li {
+      padding-left: $smallest-spacing;
+      padding-right: $smallest-spacing;
+
+      button {
+        font-family: $standard-font;
+        border: $border-standard;
+        border-radius: $pills;
+        padding-top: $space-little;
+        padding-bottom: $space-little;
+        padding-right: $space-big;
+        padding-left: $space-big;
+        background-color: $tertiary;
+        color: $secondary;
+        font-size: $default-font-size;
+        font-weight: $default-weight;
+        text-decoration: $no-deco-text;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: $strong-shadow;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: $padding-main;
+  section.quick-info {
+    padding: $padding-main;
+    margin-top: $biggest-spacing;
+    @include flex-row;
+    background-color: $primary;
+    box-shadow: $strong-shadow;
+  }
+  div.agency-presentation {
+    padding-right: $padding-main;
+    @include flex-column;
+
+    div.agency-description {
+      flex-grow: 1;
+
+      h2 {
+        margin-bottom: $space-big;
+        font-size: $big-font-size;
+        font-style: italic;
+        color: $tertiary;
+        text-shadow: 1px 1px 5px $secondary;
+      }
+    }
+
+    div.agency-buttons {
+      ul {
+        @include flex-row;
+        @include centered;
+        justify-content: space-around;
+        button {
+          font-family: $standard-font;
+          border: $border-standard;
+          border-radius: $pills;
+          padding-top: $space-little;
+          padding-bottom: $space-little;
+          padding-right: $space-big;
+          padding-left: $space-big;
+          background-color: $tertiary;
+          color: $secondary;
+          font-size: $small-font-size;
+          font-weight: $default-weight;
+          text-decoration: $no-deco-text;
+          cursor: pointer;
+          transition: transform 0.3s ease-in-out;
+          box-shadow: $strong-shadow;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  img {
+    box-shadow: $red-shadow;
+  }
+
+  section.section-gallery {
+    margin: $biggest-spacing;
+    margin-left: $biggest-second-spacing;
+    margin-right: $biggest-second-spacing;
+    background-color: $primary;
+    box-shadow: $strong-shadow;
+    @include flex-wrap;
+
+    div.gallery-container {
+      width: 40%;
+      padding: $smallest-spacing;
+      overflow: hidden;
+      flex-grow: 1;
+
+      img {
+        height: 100%;
+        display: block;
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}
