@@ -33,28 +33,6 @@ main {
         @include centered;
         justify-content: space-around;
 
-        .special-button {
-          font-family: $standard-font;
-          border: $border-standard;
-          border-radius: $pills;
-          padding-top: $space-little;
-          padding-bottom: $space-little;
-          padding-right: $space-big;
-          padding-left: $space-big;
-          background-color: $tertiary;
-          color: $secondary;
-          font-size: $small-font-size;
-          font-weight: $default-weight;
-          text-decoration: $no-deco-text;
-          cursor: pointer;
-          transition: transform 0.3s ease-in-out;
-          box-shadow: $red-shadow;
-
-          &:hover {
-            transform: scale(1.1);
-          }
-        }
-
         button {
           font-family: $standard-font;
           border: $border-standard;
